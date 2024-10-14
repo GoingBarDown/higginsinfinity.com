@@ -1,0 +1,588 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+
+}
+
+html {
+    /*scroll-behavior: smooth;*/
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Header and Navigation Bar */
+.navbar {
+    position: fixed; /* Fixes the navbar at the top of the page */
+    top: 0; /* Aligns the navbar to the top of the viewport */
+    left: 0; /* Aligns the navbar to the left edge of the viewport */
+    width: 100%; /* Ensures the navbar spans the full width */
+    background-color: black; /* Sets the background color of the navbar */
+    padding: 0 20px; /* Adds padding on the sides */
+    margin: 0; /* Removes default margin */
+    z-index: 1000; /* Ensures the navbar is above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for separation */
+    border-bottom: 4px solid #007bff; /* Blue line at the bottom of the navbar */
+    display: flex; /* Align items in the navbar horizontally */
+    justify-content: space-between; /* Space out the nav links and icons */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar .nav-links {
+    list-style-type: none; /* Removes bullet points from list items */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Displays the list items in a row */
+    gap: 20px; /* Space between items */
+    margin-left: 50px; /* Adds space from the left edge of the screen */
+}
+
+.navbar .nav-links li {
+    margin: 0; /* Removes default margin */
+}
+
+.navbar .nav-links a {
+    text-decoration: none; /* Removes the underline from links */
+    color: white; /* Sets the text color to white */
+    padding: 20px 25px; /* Increase padding for larger links */
+    font-size: 1.2rem; /* Increase font size for larger text */
+    display: block; /* Ensures the link takes up the full space of the list item */
+    text-align: center; /* Centers the text inside the link */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Adds smooth transitions for background color and box-shadow */
+    border-radius: 5px; /* Optional: Rounded corners for a smoother look */
+}
+
+.navbar .nav-links a:hover {
+    background-color: blue; /* Changes background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow to lift the element */
+}
+
+.navbar .nav-icons {
+    list-style-type: none; /* Removes bullet points from list items */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Displays the list items in a row */
+    gap: 10px; /* Space between icons */
+}
+
+.navbar .nav-icons li {
+    margin: 0; /* Removes default margin */
+}
+
+.navbar .nav-icons a {
+    color: white; /* Sets the icon color */
+    text-decoration: none; /* Removes the underline from links */
+    padding: 15px; /* Increase padding to make the icons larger */
+    font-size: 2.5rem; /* Adjust font size for larger icons */
+    display: flex; /* Ensures the link takes up the full space of the list item */
+    align-items: center; /* Center the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+    transition: color 0.3s; /* Adds a smooth transition effect for hover */
+}
+
+.navbar .nav-icons a:hover {
+    color: #007bff; /* Changes color on hover */
+}
+
+.person {
+    position: relative; /* Ensure relative positioning for the pseudo-element */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 180px;
+    padding-right: 50px;
+    background-image: url("images/resume-background1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.person::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%; /* Adjust as needed */
+    background: linear-gradient(to bottom, transparent, black); /* Gradient from transparent to black */
+    pointer-events: none; /* Ensures the gradient does not interfere with interactions */
+    z-index: 1; /* Ensures the gradient is above the background image */
+}
+
+.person .header {
+    color: white;
+}
+
+
+#me {
+    height: 500px;
+    width: 350px;
+    display: flex;
+   margin-left: 75px;
+    border-radius: 10%;
+}
+
+.person h1 {
+    display: flex;
+    margin-left: 24px;
+    color: white;
+}
+
+.person h3 {
+    display: flex;
+    margin-left: 24px;
+}
+
+#cv {
+    color: white;
+    margin-left: 180px;
+    padding: 15px 30px;  /* Increases button size (adjust as needed) */
+    background-color: transparent;  /* Makes the inside fully transparent */
+    border: 5px solid white;  /* Sets the border color and thickness */
+    font-size: 16px;  /* Adjusts the text size inside the button */
+    border-radius: 5px;  /* Optional: rounds the corners of the button */
+    cursor: pointer;  /* Changes the cursor to a pointer when hovered over */
+}
+
+#cv:hover {
+    border-color: #3498db;  /* Optional: Changes border color on hover */
+}
+.icon_bar {
+    font-size: xxx-large;
+    margin-left: 140px;
+}
+
+.icon_bar a {
+    color: inherit; /* Inherits color from parent */
+    text-decoration: none; /* Removes the underline */
+}
+
+.icon_bar a:hover {
+    color: inherit; /* Keeps the color the same on hover */
+}
+
+#git:hover {
+    display: inline-block; /* Ensures the transform works properly */
+    animation: shake 0.5s; /* Animation name and duration */
+    animation-iteration-count: infinite; /* Makes the animation loop */
+}
+#linkedin:hover {
+    display: inline-block; /* Ensures the transform works properly */
+    animation: shake 0.5s; /* Animation name and duration */
+    animation-iteration-count: infinite; /* Makes the animation loop */
+}
+#insta:hover {
+    display: inline-block; /* Ensures the transform works properly */
+    animation: shake 0.5s; /* Animation name and duration */
+    animation-iteration-count: infinite; /* Makes the animation loop */
+}
+#facebook:hover {
+    display: inline-block; /* Ensures the transform works properly */
+    animation: shake 0.5s; /* Animation name and duration */
+    animation-iteration-count: infinite; /* Makes the animation loop */
+}
+
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Container for the arrows */
+.scroll-arrows {
+    position: fixed;   /* Stays fixed as you scroll */
+    bottom: 20px;      /* Position near the bottom of the screen */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;  /* Puts arrows on the left and right */
+    padding: 0 20px;
+    pointer-events: none;  /* Makes sure the arrows don't interfere with clicks */
+}
+
+/* Style for individual arrows */
+.arrow {
+    font-size: 50px;   /* Makes the arrows bigger */
+    color: white;    /* Arrow color */
+    animation: flash 1s infinite;  /* Flashes the arrow */
+    /*opacity: 50.0;      !* Slight transparency *!*/
+}
+
+/* Left arrow */
+.arrowleft-arrow {
+    transform: rotate(-90deg);  /* Rotate arrow to point down */
+}
+
+/* Right arrow */
+.arrowright-arrow {
+    transform: rotate(90deg);  /* Rotate arrow to point down */
+}
+
+/* Animation for flashing effect */
+@keyframes flash {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 0.2; }
+}
+
+
+/* Full-Screen Container */
+.full-screen-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Takes full viewport height */
+    /*background-color: blue; !* You can change this color *!*/
+    /*color: blue;*/
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Regular content */
+.content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    padding: 50px;
+    background-color: black; /* Light gray background */
+    color: #333; /* Dark text */
+    font-size: 1.5rem;
+}
+.about {
+    border: 2px solid silver; /* Border thickness and color */
+    border-radius: 20px; /* Rounds the corners to make it bubble-like */
+    padding: 10px 20px; /* Adds space inside the border */
+    color: white; /* Text color */
+    display: inline-block; /* Makes the bubble fit around the text */
+    width: 100%;
+}
+
+.about-me, .skills-container {
+    width: 100%; /* Make sure they take up full width to stack vertically */
+    display: block; /* Default display to make sure they stack */
+    margin: 0 auto; /* Center align if they have a fixed width */
+}
+
+.section_title {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-family: "URW Chancery L", cursive;
+    font-size: 2.5rem;  /* Clear, large font size */
+    color: white;
+    background: linear-gradient(90deg, #007bff, #e63946);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* More subtle glow */
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.8),
+    0 0 2px rgba(0, 123, 255, 0.6),
+    0 0 3px rgba(230, 57, 70, 0.6);
+
+    /* Smooth shimmer effect */
+    background-size: 200% auto;
+    animation: shimmer 3s linear infinite;
+}
+
+/* Refined shimmer animation */
+@keyframes shimmer {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+
+
+
+.skills-container {
+    max-height: 600px;
+    display: flex;
+    gap: 400px; /* Space between skills boxes */
+    justify-content: center; /* Center the boxes horizontally */
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line if needed */
+    padding-top: 20px;
+}
+
+
+
+.skills-box {
+    display: flex;
+    flex-direction: column; /* Stack title and bubbles vertically */
+    align-items: center; /* Center-align content */
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis values */
+    max-width: 450px; /* Set a maximum width for each box */
+    max-height: 500px; /* Set a maximum height for each box */
+    text-align: center;
+    margin: 10px; /* Margin around each skills box */
+    padding: 20px; /* Padding inside each skills box */
+    border-radius: 10px; /* Rounded corners for the box */
+    border-style: solid;
+    border-color: blue;
+    transition: transform 0.3s ease;
+}
+
+.skills-box:hover {
+    transform: translateY(-10px);
+}
+
+.skills-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Space between the title and bubbles */
+    color: white; /* Title color */
+    font-family: 'Lato', sans-serif;
+}
+
+.bubbles {
+    display: grid; /* Use grid layout for bubbles */
+    grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+    gap: 10px; /* Space between bubbles */
+    justify-content: center; /* Center the grid horizontally */
+    margin-top: 10px; /* Add space above the bubbles */
+}
+
+.skill-bubble {
+    width: 100px;
+    height: 80px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    border-style: solid;
+    border-color: blue;
+    font-size: 14px; /* Adjust text size if needed */
+    transition: transform 0.3s ease; /* Smooth transition */
+
+}
+
+.skill-bubble:hover {
+    transform: translateY(-10px); /* Move the bubble upwards */
+    background-color: darkblue;
+}
+
+
+
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the bubbles horizontally within each box */
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center; /* Center the projects horizontally */
+    padding: 20px;
+    background-color: #000; /* Black background */
+}
+
+.projects {
+    display: flex;
+    flex-direction: row; /* Display projects in a row */
+    flex-wrap: wrap; /* Allow projects to wrap to the next line */
+    justify-content: center; /* Center-align items horizontally */
+    gap: 175px; /* Space between each project */
+    padding: 20px;
+}
+
+.website, .cms, .CSVSorter {
+    background-color: #222; /* Dark grey for a slight contrast */
+    border-left: 5px solid #e63946; /* Red accent line on the left */
+    border: 1px solid #333; /* Darker border color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Space inside each project */
+    width: 300px; /* Set a fixed width for consistency */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    text-align: center; /* Center text inside each project */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.website:hover, .cms:hover, .CSVSorter:hover {
+    background-color: #333; /* Slightly lighter dark grey on hover */
+    box-shadow: 0 8px 16px rgba(230, 57, 70, 0.6); /* Red glow shadow */
+    transform: scale(1.05); /* Slightly scale up */
+}
+
+h5 {
+    margin-bottom: 10px; /* Space below the project title */
+    font-size: 1.2rem; /* Font size for the title */
+    color: #e63946; /* Red text color */
+}
+
+.projects p {
+    font-size: 1rem; /* Font size for the description */
+    color: #ddd; /* Light grey text color for better readability */
+    line-height: 1.5; /* Line height for improved readability */
+}
+
+.section_title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white; /* Red accent color for section title */
+}
+
+.work-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #3e2a60; /* Dark purplish background */
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%; /* Take full width */
+    max-width: 800px; /* Maximum width for better readability */
+}
+
+.work-item {
+    background-color: #4a3d77; /* Slightly lighter purple for contrast */
+    border-left: 5px solid #7a5baf; /* A lighter purple accent line on the left */
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.work-item:hover {
+    background-color: #6b4e9f; /* Lighter purple on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.work-item h5 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.3rem;
+    color: #fff; /* White text for better readability */
+}
+
+.work-duration {
+    margin: 10px 0;
+    font-size: 0.95rem;
+    color: #ddd; /* Lighter grey for better readability */
+    font-style: italic; /* Italicize the duration for emphasis */
+}
+
+.work-details {
+    list-style-type: disc; /* Bulleted list */
+    padding-left: 20px; /* Space for bullet points */
+    margin: 10px 0 0;
+    color: #eee; /* Light grey for the list items */
+}
+
+.work-details li {
+    margin-bottom: 8px; /* Space between each bullet point */
+    line-height: 1.4; /* Better line spacing */
+}
+
+.work_title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #7a5baf; /* Accent color for section title */
+}
+
+/* Container for the timeline */
+.timeline {
+    position: relative;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    border-left: 2px solid #007bff;
+    top: 0;
+}
+
+/* Timeline entry */
+.timeline-entry {
+    position: relative;
+    padding: 20px 0;
+    width: 50%;
+    left: 0;
+    transform: translateX(50%);
+    margin-top: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth transition on hover */
+}
+
+.timeline-entry:hover {
+    transform: translateX(50%) scale(1.05);  /* Scale up slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Enhance shadow on hover */
+}
+
+/* Timeline date styling */
+.timeline-entry .timeline-date {
+    font-weight: bold;
+    color: #dc143c;
+    position: relative;
+    text-align: center;
+    transition: color 0.3s ease;  /* Smooth color transition */
+}
+
+.timeline-entry:hover .timeline-date {
+    color: #ff4500;  /* Change color on hover */
+}
+
+/* Timeline content styling */
+.timeline-entry .timeline-content {
+    background: dodgerblue;
+    border: 4px solid darkblue;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;  /* Smooth transition on hover */
+}
+
+/* Hover effect for timeline content */
+.timeline-entry:hover .timeline-content {
+    background: deepskyblue;  /* Lighter blue background on hover */
+    border-color: navy;  /* Darker border on hover */
+}
+
+/* Timeline content heading styling */
+.timeline-content h3 {
+    color: black;
+    transition: color 0.3s ease;  /* Smooth color transition */
+}
+
+/* Change heading color on hover */
+.timeline-entry:hover .timeline-content h3 {
+    color: white;
+}
+
+/* Timeline content paragraph styling */
+.timeline-content p {
+    color: black;
+    transition: color 0.3s ease;  /* Smooth color transition */
+}
+
+/* Change paragraph color on hover */
+.timeline-entry:hover .timeline-content p {
+    color: white;
+}
+
+
+
+
+
