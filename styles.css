@@ -713,6 +713,10 @@ img {
   font-weight: 600;
 }
 
+.experience-company i {
+  margin-right: 4px;
+}
+
 .experience-details {
   margin-top: 14px;
   padding-left: 20px;
