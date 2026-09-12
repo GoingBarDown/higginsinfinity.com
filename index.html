@@ -26,6 +26,7 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#exp">Work Experience</a></li>
       <li><a href="#education1" class="signup-link">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
     <ul class="nav-icons">
       <li><a href="https://github.com/GoingBarDown"><i class="fa-brands fa-square-github" id="git2"></i></a></li>
@@ -96,6 +97,18 @@
       <div class="skill-bubble">JavaScript</div>
       <div class="skill-bubble">MySQL</div>
       <div class="skill-bubble">Postgres</div>
+      <div class="skill-bubble">TypeScript</div>
+      <div class="skill-bubble">Kotlin</div>
+      <div class="skill-bubble">SQL</div>
+      <div class="skill-bubble">FastAPI</div>
+      <div class="skill-bubble">AWS SQS/SNS</div>
+      <div class="skill-bubble">Spring Boot</div>
+      <div class="skill-bubble">React</div>
+      <div class="skill-bubble">Docker</div>
+      <div class="skill-bubble">Twilio API</div>
+      <div class="skill-bubble">JUnit</div>
+      <div class="skill-bubble">Mockito</div>
+      <div class="skill-bubble">Git</div>
         </div>
     </div>
     <div class="skills-box">
@@ -126,6 +139,14 @@
   <h3 class="section_title" id="projects">Projects</h3>
   <div class="projects-container">
     <div class="projects">
+      <div class="dialpass">
+        <h5>DialPass: AI Phone-Tree Agent</h5>
+        <p>Built a bidirectional audio engine with FastAPI WebSockets and asyncio that streams live Twilio call audio to OpenAI's Realtime API, letting an AI agent navigate phone trees and hand a live human to the user. Designed a two-tier inference state machine that classifies audio cheaply during hold and invokes the full real-time model only on menu prompts or agent pickup, reducing active AI inference by up to 90%. Architected an AWS SQS telemetry pipeline to keep call-event data off the critical audio path, with a circuit breaker that reroutes dropped calls and timeouts to a fallback notification.</p>
+      </div>
+      <div class="musicanalytics">
+        <h5>Custom Dynamic Music Analytics Engine</h5>
+        <p>Engineered a declarative music analytics platform allowing users to design and execute custom aggregation queries over unstructured multi-year streaming history datasets. Designed a dynamic query compilation layer in Java to parse user-defined statistical metrics into highly optimized, multi-stage PostgreSQL processing pipelines. Optimized analytical performance by implementing database indices, caching layers, and parallel data streams to reduce execution latency across million-row JSON listener logs.</p>
+      </div>
       <div class="cms">
         <h5>Classroom Management System</h5>
         <p>Built a comprehensive grade management system in Java, utilizing object-oriented programming principles to calculate weighted scores, determine letter grades, and generate class report cards for student performance analysis. The system includes modular functions for calculating minimum, maximum, and average scores across multiple assignments and exams, enhancing its reusability and maintainability while ensuring accurate data representation for educational assessments.</p>
@@ -154,6 +175,23 @@
   <h3 class="section_title" id="exp">Work Experience</h3>
   <div class="work-container">
     <div class="work">
+      <div class="work-item">
+        <h5>Software Development Intern</h5>
+        <p class="work-duration">Amazon Web Services - Vancouver, BC | May 2026 to August 2026</p>
+        <ul class="work-details">
+          <li>Engineered a distributed internal operations platform using Java, React, and TypeScript, consolidating 5 fragmented operational CLIs into a unified Object Explorer alongside 4 additional investigation tools, deployed and used by the Amazon SNS on-call rotation.</li>
+          <li>Architected an asynchronous backend execution engine to securely execute host-level operational CLIs, parsing unstructured text outputs into strongly typed Java objects with robust error-boundary handling.</li>
+          <li>Designed a dynamic workflow routing layer that parses the Amazon Resource Name (ARN) to automatically adapt investigative tools based on AWS SNS Standard vs. FIFO topic configurations.</li>
+          <li>Implemented an enterprise-grade security workflow for SNS topic-policy recovery, enforcing POSIX-group authorization, strict authentication, and a mandatory two-person review (2PR) consensus protocol.</li>
+        </ul>
+        <p class="work-duration">Amazon Web Services - Vancouver, BC | May 2025 to August 2025</p>
+        <ul class="work-details">
+          <li>Developed and deployed an extensible host-level Health Check engine critical to maintaining global service reliability for AWS SQS and SNS at hyperscale.</li>
+          <li>Authored cross-platform diagnostic checks executing directly on Amazon Linux hosts to monitor RPM database consistency and Graviton CPU hardware functionality.</li>
+          <li>Built a configurable telemetry and metrics system using Spring, exposing real-time visibility into regional deployment status, server health, and failure modalities.</li>
+          <li>Utilized Spring to convert object-oriented methods into executable host scripts, automating deployment workflows and integrating seamlessly with existing infrastructure platforms.</li>
+        </ul>
+      </div>
       <div class="work-item">
         <h5>Culver's Production Manager</h5>
         <p class="work-duration">Culver's - Lawrence, KS | August 2016 to February 2018</p>
@@ -229,15 +267,32 @@
         </div>
       </div>
       <div class="timeline-entry">
-        <div class="timeline-date">August 2021 - Current</div>
+        <div class="timeline-date">August 2021 - December 2027 (Expected)</div>
         <div class="timeline-content">
           <h3>Concordia University</h3>
-          <p>Computer Science (Currently Enrolled)</p>
+          <p>Bachelor of Computer Science (Currently Enrolled)</p>
+          <p>Relevant Coursework: Data Structures & Algorithms, Operating Systems, Computer Networks, Theory of Computation, Artificial Intelligence</p>
         </div>
       </div>
     </div>
   </section>
 
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <h3 class="section_title" id="contact">Contact</h3>
+  <div class="about">
+    <p><br>Interested in connecting? Reach out anytime at <a href="mailto:chandlerhiggins.cs@gmail.com">chandlerhiggins.cs@gmail.com</a>.</p>
+    <br>
+  </div>
+  <br>
+  <br>
 
 </section>
 

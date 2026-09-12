@@ -399,7 +399,7 @@ html, body {
     padding: 20px;
 }
 
-.website, .cms, .CSVSorter {
+.website, .cms, .CSVSorter, .dialpass, .musicanalytics {
     background-color: #222; /* Dark grey for a slight contrast */
     border-left: 5px solid #e63946; /* Red accent line on the left */
     border: 1px solid #333; /* Darker border color for contrast */
@@ -411,7 +411,7 @@ html, body {
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transition for hover effect */
 }
 
-.website:hover, .cms:hover, .CSVSorter:hover {
+.website:hover, .cms:hover, .CSVSorter:hover, .dialpass:hover, .musicanalytics:hover {
     background-color: #333; /* Slightly lighter dark grey on hover */
     box-shadow: 0 8px 16px rgba(230, 57, 70, 0.6); /* Red glow shadow */
     transform: scale(1.05); /* Slightly scale up */
