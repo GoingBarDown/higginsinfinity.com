@@ -219,12 +219,12 @@ html, body {
 }
 
 /* Left arrow */
-.arrowleft-arrow {
+.left-arrow {
     transform: rotate(-90deg);  /* Rotate arrow to point down */
 }
 
 /* Right arrow */
-.arrowright-arrow {
+.right-arrow {
     transform: rotate(90deg);  /* Rotate arrow to point down */
 }
 
