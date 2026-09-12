@@ -557,7 +557,7 @@ img {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 22px;
 }
 
@@ -595,12 +595,6 @@ img {
   color: var(--accent-bright);
   border-color: var(--accent-border);
   transform: translateY(-2px);
-}
-
-@media (max-width: 780px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ---------------------------------------------------------
