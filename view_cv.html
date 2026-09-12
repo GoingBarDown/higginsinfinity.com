@@ -3,24 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View CV</title>
+    <title>Chandler Higgins | CV</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <style>
         body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
-            margin: 40px;
-            background-color: #f0f0f0; /* Optional: Change background color */
+            min-height: 100vh;
+            margin: 0;
+            padding: 24px;
+            background-color: #06070a;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            box-sizing: border-box;
+        }
+        .back-link {
+            align-self: flex-start;
+            color: #a7adbd;
+            text-decoration: none;
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+        .back-link:hover {
+            color: #5b9bff;
         }
         iframe {
-            width: 70%; /* Set the width of the PDF viewer */
-            height: 100%; /* Set the height of the PDF viewer */
-            border: none; /* Remove border */
+            width: 100%;
+            max-width: 900px;
+            flex: 1;
+            min-height: 80vh;
+            border: 1px solid #1d212c;
+            border-radius: 10px;
+            background: #fff;
         }
     </style>
 </head>
 <body>
-<iframe src="Chandler_Higgins_Resume.pdf"></iframe>
+<a class="back-link" href="index.html">&larr; Back to portfolio</a>
+<iframe src="Chandler-Higgins-Resume.pdf" title="Chandler Higgins Resume"></iframe>
 </body>
 </html>
